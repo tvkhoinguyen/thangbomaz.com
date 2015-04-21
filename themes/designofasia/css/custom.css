@@ -1,0 +1,13 @@
+.box3-share-right{border: none;}
+.errorMessage{ 
+	color:red !important;
+	margin-top: -15px;
+	margin-bottom: 10px;
+}
+
+/*pagination*/
+.pagination {padding-left:10px;}
+.pagination>li>a {color:#3b3b3b;}
+
+/*Designer destail*/
+.designer-certificate p img {padding-bottom: 2px; float: left;}

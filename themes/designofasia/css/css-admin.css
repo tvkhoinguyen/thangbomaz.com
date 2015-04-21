@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+body {background:#FFFFFF;font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0; text-align:left;}
+img{border:0;}
+a {}
+a:hover{}
+.border-td {background:#999999; border:1px solid #333333; height:15px; padding:5px 10px 0px; color:#FFFFFF; font-weight:bold; height:30px; vertical-align:middle; text-indent:-7px; padding-bottom:5px}
+.bg-table-admin {background:url(../images/bannerAdmin.png) repeat-x; height:35px; color:#FFFFFF; padding-top:10px;  text-align:left; padding-left:30px;}
+.bg-table-admin a {color:#FFFF00;; text-decoration:none;}
+.bg-table-admin a:hover {color:#FFFF00; font-weight:bold;}
+.bg-table-admin div {float:left; padding-left:80px;}
+.border{border:1px solid #333333; padding-left:5px; height:20px;}
+.border a{color:#666666; text-decoration:none; font-weight:bold;}
+.border a:hover{color:#FF0000;}
+
+/* Trinh bay */
+.border2 {border:1px solid #666666; height:20px;}
+.class-tb table, tr, td {border:1px solid solid;}
+.class-tr {font-weight:bold; background-color:#333333; color:#FFFFFF; height:30px;}
+.class-td {border:1px solid #CCCCCC;}
+.class-td2 {border:1px solid #CCCCCC; font-weight:bold}
