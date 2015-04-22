@@ -3,32 +3,32 @@
 
 /*RESET*/
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
-	margin:0;
-	padding:0;
+    margin:0;
+    padding:0;
 }
 table {
-	border-collapse:collapse;
-	border-spacing:0;
+    border-collapse:collapse;
+    border-spacing:0;
 }
 fieldset,img { 
-	border:0;
+    border:0;
 }
 address,caption,cite,code,dfn,em,strong,th,var {
-	
-	font-weight:normal;
+    
+    font-weight:normal;
 }
 ol,ul {
-	list-style:none;
+    list-style:none;
 }
 caption,th {
-	text-align:left;
+    text-align:left;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
-	font-weight:normal;
+    font-size:100%;
+    font-weight:normal;
 }
 q:before,q:after {
-	content:'';
+    content:'';
 }
 abbr,acronym { border:0;
 }
@@ -80,37 +80,47 @@ body{background:url(images/bg.jpg) repeat-x top #fff; font:12px Arial, Helvetica
 
 .main-cat-hotnews{ border:0px solid #ffcecc; clear:both; margin:8px 0; min-height:960px}
 .main-cat-hotnews h3 img{ float:left; margin:0 5px 0 8px; width:32px; position:relative; top:-5px; z-index:500}
-.main-cat-title{ background:url(images/cat-title.png)  bottom repeat-x; color:#540604;height:32px; padding-left:50px; line-height:32px; width:624px; display:block; z-index: 20}
+.main-cat-title{ background:url(images/cat-title.png)  bottom; color:#fff;height:32px; padding-left:5px; line-height:32px; width:670px; display:block; z-index: 20}
+.main-cat-title-subnews{ background:url(images/cat-title-subnews.png)  bottom; color:#fff;height:32px; padding-left:5px; line-height:32px; width:745px; display:block; z-index: 20}
 .main-videocat-title{ background:url(images/cat-title.png)  bottom repeat-x; color:#540604;height:32px; padding-left:50px; line-height:32px; width:624px; display:block; z-index: 20}
-.main-cat-content{ padding:5px; clear:both;width:470px;float:left}
+.main-cat-content{ padding:5px; clear:both;width:430px;float:left}
 .main-videocat-content{ padding:5px; clear:both;width:385px; float:left}
-.main-cat-content img{ padding:2px; border:1px solid #666; background:#bbb; margin:5px; float:left}
+.main-cat-content img{ padding:2px; border:1px solid #666; background:#bbb; margin:2px; float:left;width: 154px; height: 97px;}
 .main-cat-content a{ font-weight:bold;}
-.main-cat-content p strong{font-weight:normal}
-.main-cat-listnews{ width:180px; float:right; background:url(images/listnews-bg.png) no-repeat center bottom; padding:0 3px 10px 3px}
-.main-cat-listnews-title{ background:url(images/cat-title.png)  bottom repeat-x; color:#540604;height:32px; width:182px; display:block; z-index: 20; font-size:14px;padding-top:10px; color:#FF0000; text-transform:uppercase; font-weight:bold}
-.main-cat-listnews ul li{ background:url(images/marker.png) no-repeat 4px 12px ; padding-left:15px; line-height:25px;}
+.main-cat-content p strong{font-weight:normal; text-align: justify;}
+.main-cat-listnews{ width:200px; height: 700px; float:right; padding:0 3px 10px 3px; }
+.main-cat-listnews-title{ background:url(images/main-list-news-title.jpg)  bottom; margin-top: 4px; color:#540604;height:25px; width:200px; text-align: center; display:block; z-index: 20; font-size:14px;padding-top:5px; color:#fff; text-transform:uppercase; font-weight:bold}
+.main-cat-listnews-title p{text-align: justify;}
+.main-cat-listnews ul li{ background:url(images/marker.png) no-repeat 1px 6px ; padding-left:15px; line-height:25px;}
+
+.main-cat-subnews{ width:350px; height: 200px; float:left; margin: 0 20px 0 0; }
+.main-cat-subnews-title{ background:url(images/main-list-subnews.jpg)  bottom; margin-top: 4px; color:#540604;height:25px; width:350px; text-align: center; display:block; z-index: 20; font-size:14px;padding-top:5px; color:#fff; text-transform:uppercase; font-weight:bold}
+.main-cat-subnews-title p{text-align: justify;}
+.main-cat-subnews ul li{ background:url(images/marker.png) no-repeat 1px 6px ; padding-left:15px; line-height:25px;}
+
 .main-giaoduc{ }
 .main-daotao{ }
 .main-tailieu{}
 
-.cat-hotnews{ border:1px solid #ffcecc; clear:both; margin:8px 0; min-height:150px}
+.cat-hotnews{ border:1px solid #ffcecc; clear:both; margin: 0 0; min-height: 279px}
 .cat-hotnews h3 img{ float:left; margin:0 5px 0 8px; width:32px; position:relative; top:-5px; z-index:500}
-.cat-title{ background:url(images/cat-title.png)  bottom repeat-x; color:#540604;height:32px; padding-left:50px; line-height:32px; width:624px; display:block; z-index: 20}
-.videocat-title{ background:url(images/cat-title.png)  bottom repeat-x; color:#540604;height:32px; padding-left:50px; line-height:32px; width:624px; display:block; z-index: 20}
-.cat-content{ padding:5px; clear:both;width:470px;float:left}
+.cat-title{ background:url(images/cat-title.png)  bottom; color:#fff;height:32px; padding-left: 5px; line-height:32px; width:670px; display:block; z-index: 20}
+.videocat-title{ background:url(images/cat-title-video.png)  bottom ; color:#fff;height:32px; padding-left:10px; line-height:32px; width:970px; display:block; z-index: 20}
+.cat-content{ padding:5px; clear:both;width:430px;float:left}
 .videocat-content{ padding:5px; clear:both;width:385px; float:left}
-.cat-content img{ padding:2px; border:1px solid #666; background:#bbb; margin:5px; float:left}
+.cat-content img{ padding:2px; border:0px solid #666; background:#bbb; margin:2px; float:left; width: 154px; height: 97px;}
 .cat-content a{ font-weight:bold;}
-.cat-content p strong{font-weight:normal}
-.cat-listnews{ width:180px; float:right; background:url(images/listnews-bg.png) no-repeat center bottom; padding:0 3px 10px 3px}
+.cat-content p strong{font-weight:normal; text-align: justify;}
+.cat-listnews{ width:200px; height: 210px; float:right; background:url(images/listnews-bg.png) no-repeat center bottom; padding:0 3px 10px 3px}
 .cat-listnews-title{ background:url(images/cat-title.png)  bottom repeat-x; color:#540604;height:32px; width:182px; display:block; z-index: 20; font-size:14px;padding-top:10px; color:#FF0000; text-transform:uppercase; font-weight:bold}
-.cat-listnews ul li{ background:url(images/marker.png) no-repeat 4px 12px ; padding-left:15px; line-height:25px;}
+.cat-listnews ul li{ background:url(images/marker.png) no-repeat 1px 6px ; padding-left:15px; line-height:25px;}
 .giaoduc{ }
 .daotao{ }
 .tailieu{}
 #leftcol{ width:675px; float:left}
-#rightcol{width:305px; float:right;}
+#rightcol{width:300px; float:right;}
+#leftcol-subnews{ width:750px; float:left}
+#rightcol-subnews{width:250px; float:right;}
 #videoleftcol{ width:980px; float:left}
 .rcol-box{ margin:5px 0 0 5px; padding-bottom:5px;}
 .banner_forum img{padding:5px 5px}
@@ -150,15 +160,15 @@ body{background:url(images/bg.jpg) repeat-x top #fff; font:12px Arial, Helvetica
 .cn-top{ width:45px; height:35px; float:left; background:url(images/cn-top.png) no-repeat left}
 .cn-bottom{ background:url(images/cn-bottom.png) no-repeat right bottom; padding:0 35px 10px 0}
 .cn-author{ font-weight:bold; font-style:italic; text-align:right; clear:both}
-.pagename{ background:url(images/cat-title.png) repeat-x bottom;  padding:15px 10px 5px 10px; text-transform:uppercase; font-family:Tahoma, Arial, Helvetica, sans-serif}
-.top-listnew{ width:360px; background:#E7EDED; padding:10px; float:left; text-align:justify}
+.pagename{ background:url(images/cat-title-top.png) repeat-x bottom;  padding:15px 10px 5px 10px; text-transform:uppercase; font-family:Tahoma, Arial, Helvetica, sans-serif}
+.top-listnew{ width:360px; padding:10px; float:left; text-align:justify}
 .top-listnew img{ background:#fff; border:1px solid #555; padding:3px;}
 .top-listnew h3{padding:5px 0}
 .top-listnew p strong{font-weight:normal;}
 .bh-listnew{ width:280px; float:left; margin-left:15px }
 .bh-listnew h3{ color: red; padding-top:10px;}
 .bh-listnew ul{ margin:10px 0}
-.bh-listnew ul li{line-height:25px; padding-left:20px; background:url(images/insu.png) no-repeat 3px 10px;}
+.bh-listnew ul li{line-height:25px; padding-left:20px; background:url(images/insu.png) no-repeat 3px 5px;}
 
 .listnews-hotnews{ border:1px solid #ffcecc; clear:both; margin:8px 0;}
 .listnews-hotnews h3 img{ float:left; margin:0 5px 0 8px; width:32px; position:relative; top:-5px; z-index:500}
@@ -181,7 +191,7 @@ body{background:url(images/bg.jpg) repeat-x top #fff; font:12px Arial, Helvetica
 .giayphep a:hover {color:#FFFF00; text-decoration:none}
 
 .box{
-    width: 160px;
+    width: 150px;
     float: left;
 }
 .box a:hover{
@@ -197,10 +207,10 @@ body{background:url(images/bg.jpg) repeat-x top #fff; font:12px Arial, Helvetica
     font-family: 'PT Sans Narrow', sans-serif;
 }
 .center-box{
-    border-right: 1px dashed silver;
-    border-left: 1px dashed silver;
-    padding: 0px 10px;
-    margin-right: 10px;
+    border-right: 0px dashed silver;
+    border-left: 0px dashed silver;
+    padding: 0px 5px;
+    margin-right: 5px;
 }
 .center-box a{
     font-family: 'PT Sans Narrow', sans-serif;
@@ -287,17 +297,17 @@ body{background:url(images/bg.jpg) repeat-x top #fff; font:12px Arial, Helvetica
 
     }
 
-    #mbt-menu li {
+    #mbt-menu li {/* duong phan cach menu*/
 
     float: left;
 
-    border-right: 1px solid #222;
+    border-right: 0px solid #222;
 
-    -moz-box-shadow: 1px 0 0 #444;
+    -moz-box-shadow: 0px 0 0 #444;
 
-    -webkit-box-shadow: 1px 0 0 #444;
+    -webkit-box-shadow: 0px 0 0 #444;
 
-    box-shadow: 1px 0 0 #444;
+    box-shadow: 0px 0 0 #444;
 
     position: relative;
 
@@ -307,11 +317,11 @@ body{background:url(images/bg.jpg) repeat-x top #fff; font:12px Arial, Helvetica
 
     float: left;
 
-    padding: 10px 18px 0 18px;
+    padding: 5px 23px 0 23px; /*do rong cua menu cha*/
 
     color: #fff;
 
-    font: bold 11px Tahoma, Arial;
+    font: bold 12px Tahoma, Arial;
     text-transform:uppercase;
 
     text-decoration: none;

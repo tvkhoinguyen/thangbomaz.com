@@ -29,17 +29,8 @@
     // $top_right = TopBannerRight::model()->findByPk(2);
     // $link_right = ImageHelper::getImageUrl($top_right, "image", TopBannerRight::SIZE);
     ?>
-    <script type="text/javascript">         
-        google_ad_client = "ca-pub-9511385175886331";           
-        google_ad_slot = "8789912401";          
-        google_ad_width = 300;          
-        google_ad_height = 100;         
-    </script>           
-    <!-- Ad thangbomaz.com 01 -->           
-    <script type="text/javascript"          
-    src="//pagead2.googlesyndication.com/pagead/show_ads.js">           
-    </script>           
-    <!-- <img src="<?php echo $link_right; ?>" height="100px" width="368px"/> -->
+    <a target="_blank" href="http://raobanusa.com"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/tb_raovat_logo.png" width="300px" height="120px"></a>
+    <!-- <img src="<?php echo $link_right; ?>" height="120px" width="300px"/> -->
 </div>
 
 <div class="hd-bg"></div>

@@ -1,5 +1,5 @@
 <div id="videoleftcol">
-		<div class="pagename"><h2><?php  echo $title; ?></h2></div>
+		<div class="pagenamevideo"><h2><?php  echo $title; ?></h2></div>
 		<center>
 	  	<div class="video-cat-hotnews" style="margin: 0 auto;">
 	  		<?php    
