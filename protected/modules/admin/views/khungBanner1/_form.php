@@ -1,6 +1,6 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title"><span class="<?php echo $model->isNewRecord ? $this->iconCreate : $this->iconEdit; ?>"></span> Update <?php echo $this->singleTitle; ?></h3>
+		<h3 class="panel-title"><span class="<?php echo $model->isNewRecord ? $this->iconCreate : $this->iconEdit; ?>"></span> Update KhungBanner1</h3>
 	</div>
 	<div class="panel-body">
 		<?php $this->renderNotifyMessage();  ?>
@@ -17,46 +17,12 @@
 				),
 		)); ?>
 	
-	<?php 
-	if( !$model->isNewRecord)
-    {
-            ?>
+	
         <div class='form-group form-group-sm'>
 			<?php echo $form->labelEx($model,'image', array('class' => 'col-sm-1 control-label')); ?>
             <div class="col-sm-6">
 			<?php echo $form->fileField($model, 'image'); ?>
-			<?php 
-			$width = ''; $height='';
-			if($model->id !='' )
-			{
-				switch ($model->id) 
-				{
-					case '5':
-						$width = QuangCaoBanner::WIDTH1; $height=QuangCaoBanner::HEIGHT1;
-						break;
-					case '6':
-						$width = QuangCaoBanner::WIDTH1; $height=QuangCaoBanner::HEIGHT1;
-						break;
-					case '7':
-						$width = QuangCaoBanner::WIDTH1; $height=QuangCaoBanner::HEIGHT1;
-						break;
-					case '8':
-						$width = QuangCaoBanner::WIDTH3; $height=QuangCaoBanner::HEIGHT3;
-						break;
-					case '9':
-						$width = QuangCaoBanner::WIDTH2; $height=QuangCaoBanner::HEIGHT2;
-						break;
-					case '10':
-						$width = QuangCaoBanner::WIDTH2; $height=QuangCaoBanner::HEIGHT2;
-						break;
-
-					default:
-						$width = ''; $height='';
-						break;
-				}
-			}
-			?>
-			Recommended Size: <?php echo $width; ?>px x <?php echo $height; ?>px (width x height). Allow: *.jpg, *.png, *.gif - Maximum file size : <?php echo ($model->maxImageFileSize/1024)/1024;?>M 
+			Recommended Size: <?php echo KhungBanner1::WIDTH ?>px x <?php echo KhungBanner1::HEIGHT ?>px (width x height). Allow: *.jpg, *.png, *.gif
 			<?php echo $form->error($model,'image'); ?>
 			</div>
 		</div>
@@ -68,17 +34,14 @@
 				if(!empty($model->image)) 
 				{
 					// echo $model->image;
-					// echo ImageHelper::getImageUrl($model, 'image', TopBannerLeft::SIZE );
-					echo '<img src="'.ImageHelper::getImageUrl($model, 'image', QuangCaoBanner::SIZE2 ).'" />';
+					// echo ImageHelper::getImageUrl($model, 'image', KhungBanner1::SIZE );
+					echo '<img src="'.ImageHelper::getImageUrl($model, 'image', KhungBanner1::SIZE ).'" />';
 					// echo ImageHelper::getImageUrl($model, 'image', '200x350' );
 				}
 					
               	?>
         	</div>
 		</div>	
-            <?php
-    }
-    ?>
 
 
 		<div class='form-group form-group-sm'>

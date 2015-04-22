@@ -1,33 +1,20 @@
 <?php
 
-class TinTucThoiSuController extends AdminController
+class KhungBanner1Controller extends AdminController
 {
-    public $pluralTitle = 'Thời Sự';
-    public $singleTitle = 'Thời Sự';
+    public $pluralTitle = 'KhungBanner1';
+    public $singleTitle = 'KhungBanner1';
     public $cannotDelete = array();
-    public function actionCreate()
-    {
+    public function actionCreate(){
         try {
-            $model = new ThoiSu('create');
-            $model->status=1;
-            $model->is_marquee = 0;
-            $model->is_hot = 1;
-            $model->is_home = 1;
-            $model->is_default = 0;
-            $model->is_bai_hot = 0;
-            // 'is_marquee'=>'Slide Chạy Mỗi Chuyên Mục',
-            // 'is_hot'=>'Nổi Bật Mỗi Chuyên Mục',
-            // 'is_home' => Yii::t('translation','Nằm Home Mỗi Chuyên Mục'),
-            // 'is_default' => Yii::t('translation','Nằm Ở Trang Chủ'),
-            // 'is_bai_hot' => Yii::t('translation','Bài Hot Nằm Ở Trang Chủ'),
-            
-            if (isset($_POST['ThoiSu'])) {
-                $model->attributes = $_POST['ThoiSu'];
-                $model->created_date = $model->updated_date = date('Y-m-d H:i:s');
-                $model->view = 1;
+            $model = new KhungBanner1('create');
+            if (isset($_POST['KhungBanner1'])) {
+                $model->attributes = $_POST['KhungBanner1'];
+                $model->type = 'khungbanner1';
                 if($model->save())
-				{
+				{ 	
 					$model->saveImage('image');
+							
 					$this->setNotifyMessage(NotificationType::Success, $this->singleTitle . ' has been created');
                     $this->redirect(array('view', 'id'=> $model->id));
 				}
@@ -39,8 +26,8 @@ class TinTucThoiSuController extends AdminController
                 'actions' => $this->listActionsCanAccess,
             ));
         }catch (exception $e) {
-            Yii::log("Exception " . print_r($e, true), 'error');
-            throw new CHttpException($e);
+            //Yii::log("Exception " . print_r($e, true), 'error');
+            //throw new CHttpException($e);
         }
     }
 
@@ -50,11 +37,21 @@ class TinTucThoiSuController extends AdminController
                 // we only allow deletion via POST request
 				if (!in_array($id, $this->cannotDelete))
 				{
-					if($model = $this->loadModel($id)){
+					if($model = $this->loadModel($id))
+					{
+											
+						foreach ($model->defineImageSize as $key => $value) 
+						{
+						    $imageField=$key; break;
+						}
+						$old_image = $model->$imageField;
+						if(!empty($old_image)) $model->deleteImages($imageField, $old_image);
 						//call delete image first
-                        $model->removeImage(array('image'), true);
+						//$model->removeImage(array('image'), true);
 						if($model->delete())
-							Yii::log("Delete record ".  print_r($model->attributes, true), 'info');
+						{
+							//Yii::log("Delete record ".  print_r($model->attributes, true), 'info');
+						}
 					}
 
 					// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -62,54 +59,55 @@ class TinTucThoiSuController extends AdminController
 						$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 				}
             } else {
-                Yii::log("Invalid request. Please do not repeat this request again.");
-                throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
+                //Yii::log("Invalid request. Please do not repeat this request again.");
+                //throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
             }
         } catch (Exception $e) {
-            Yii::log("Exception ".  print_r($e, true), 'error');
-            throw  new CHttpException($e);
+            //Yii::log("Exception ".  print_r($e, true), 'error');
+            //throw  new CHttpException($e);
         }
     }      
     
     public function actionIndex() {
         try {
-            $model=new ThoiSu('search');
+            $model=new KhungBanner1('search');
             $model->unsetAttributes();  // clear any default values
-            if(isset($_GET['ThoiSu']))
-                $model->attributes=$_GET['ThoiSu'];
+            if(isset($_GET['KhungBanner1']))
+                $model->attributes=$_GET['KhungBanner1'];
 
             $this->render('index',array(
                 'model'=>$model, 'actions' => $this->listActionsCanAccess,
             ));
         } catch (Exception $e) {
-            Yii::log("Exception ".  print_r($e, true), 'error');
-            throw  new CHttpException($e);
+            //Yii::log("Exception ".  print_r($e, true), 'error');
+            //throw  new CHttpException($e);
         }
     }
 
     public function actionUpdate($id) {
         $model=$this->loadModel($id);
-        if(isset($_POST['ThoiSu']))
+        if(isset($_POST['KhungBanner1']))
         {
-            $old_image = $model->image;
-            foreach ($model->defineImageSize as $key => $value) {
-                $imageField=$key;
-            }
-            $uploadImage = CUploadedFile::getInstance($model, $imageField);
-
-            $model->attributes=$_POST['ThoiSu'];
-            $model->updated_date = date('Y-m-d H:i:s');
-            $model->view = $model->view+1 ;
+        	foreach ($model->defineImageSize as $key => $value) {
+        	    $imageField=$key; break;
+        	}
+        	$old_image = $model->$imageField;
+        	$uploadImage = CUploadedFile::getInstance($model, $imageField);
+            $model->attributes=$_POST['KhungBanner1'];
+            $model->type = 'khungbanner1';
             if ($model->save())
-			{
+			{ 			
 				if( empty($uploadImage) || $uploadImage==NULL )
-                {
-                    $model->image = $old_image;
-                    $model->update( array($imageField) );
-                }else{
-                    $model->saveImage($imageField);
-                    $model->deleteImages($imageField, $old_image);
-                }
+				{
+				    $model->image = $old_image;
+				    $model->update( array($imageField) );
+				}else{
+				    $model->saveImage($imageField);
+				    $model->deleteImages($imageField, $old_image);
+				}
+								
+				//$model->saveImage('image');
+								
 				$this->setNotifyMessage(NotificationType::Success, $this->singleTitle . ' has been updated');
 				$this->redirect(array('view', 'id'=> $model->id));
 			}
@@ -127,8 +125,6 @@ class TinTucThoiSuController extends AdminController
     public function actionView($id) {
         try {
             $model = $this->loadModel($id);
-            $model->view = $model->view+1;
-            $model->update(array('view'));
             $this->render('view', array(
                 'model'=> $model,
                 'actions' => $this->listActionsCanAccess,
@@ -144,12 +140,12 @@ class TinTucThoiSuController extends AdminController
 	*/
 	public function actionDeleteAll()
 	{
-		$deleteItems = $_POST['ThoiSu-grid_c0'];
+		$deleteItems = $_POST['khung-banner1-grid_c0'];
 		$shouldDelete = array_diff($deleteItems, $this->cannotDelete);
 
 		if (!empty($shouldDelete))
 		{
-			$deleteImages = Page::model()->findAll('id in (' . implode(',', $shouldDelete) . ')');if (!empty($deleteImages)){	foreach($deleteImages as $item){$item->removeImage(array('image'), true);}}			ThoiSu::model()->deleteAll('id in (' . implode(',', $shouldDelete) . ')');
+			$deleteImages = Page::model()->findAll('id in (' . implode(',', $shouldDelete) . ')');if (!empty($deleteImages)){	foreach($deleteImages as $item){$item->removeImage(array('image'), true);}}			KhungBanner1::model()->deleteAll('id in (' . implode(',', $shouldDelete) . ')');
 			$this->setNotifyMessage(NotificationType::Success, 'Your selected records have been deleted');
 		}
 		else
@@ -179,7 +175,7 @@ class TinTucThoiSuController extends AdminController
 		
     public function loadModel($id){
 		//need this define for inherit model case. Form will render parent model name in control if we don't have this line
-		$initMode = new ThoiSu();
+		$initMode = new KhungBanner1();
         $model=$initMode->findByPk($id);
         if($model===null)
                 throw new CHttpException(404,'The requested page does not exist.');

@@ -71,7 +71,7 @@
 <div class="rcol-box" style="margin: 0 0 0 0">
   <div class="rcol-title"><img class="rcol-icon" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/youtube.png" width="60px"/><br />
     <a target="_blank" href="<?php echo Yii::app()->setting->getItem('link_see_us_youtube'); ?>">
-      <div style="margin-top: 10px;"><font size="+1" color="#fff">See us on Youtube</font></div>
+      <div style="margin-top: 10px;"><font size="+1" color="#fff">Phóng sự Video</font></div>
     </a>
   </div>
   <?php 
@@ -91,10 +91,27 @@
   ?>
 </div>
 <!-- end slot 2 -->
+<div style="height: 420px; width= 320px;">
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9511385175886331";
+    google_ad_slot = "7170991209";
+    google_ad_width = 300;
+    google_ad_height = 400;
+</script>
+<!-- Ad thangbomaz.com 03 -->
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<!-- Google Adsense -->
 
+
+
+<!-- End of GG Adsense-->
 
 <!-- slot 3 -->
 <div id="neoslideshow2" class="neoslideshow" style="height: 420px;">
+
     <?php
       $criteria = new CDbCriteria();
       $criteria->addCondition('type="khungbanner2"');

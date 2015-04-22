@@ -171,9 +171,9 @@
 			//set class my-editor-basic for basic
 			//set class my-editor-full for full toolbars
 			$(document).ready(function() {
-                runEditorBasic('<?php echo Yii::app()->baseUrl; ?>/resources/', <?php echo Yii::app()->params['ckeditor_basic']; ?>, '100%', 150);
-                runEditorBasic_NguyenCustom('<?php echo Yii::app()->baseUrl; ?>/resources/', <?php echo Yii::app()->params['ckeditor_basic_nguyen_custom']; ?>, '100%', 150);
-				runEditorFull('<?php echo Yii::app()->baseUrl; ?>/resources/', <?php echo Yii::app()->params['ckeditor_full']; ?>, '100%', 250);
+                runEditorBasic('<?php echo Yii::app()->baseUrl; ?>/resources/', <?php echo Yii::app()->params['ckeditor_basic']; ?>, '100%', 300);
+                runEditorBasic_NguyenCustom('<?php echo Yii::app()->baseUrl; ?>/resources/', <?php echo Yii::app()->params['ckeditor_basic_nguyen_custom']; ?>, '100%', 300);
+				runEditorFull('<?php echo Yii::app()->baseUrl; ?>/resources/', <?php echo Yii::app()->params['ckeditor_full']; ?>, '100%', 700);
 				runDatePicker('<?php echo Yii::app()->theme->baseUrl; ?>', 'dd/mm/yy');
 				runTimePicker('<?php echo Yii::app()->theme->baseUrl; ?>');
 				runDateTimePicker('<?php echo Yii::app()->theme->baseUrl; ?>');

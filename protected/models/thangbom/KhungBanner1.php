@@ -1,18 +1,17 @@
 <?php
 
-class TopBannerLeft extends _BaseModel {
+class KhungBanner1 extends _BaseModel {
 
-	const WIDTH = 680;
-	const HEIGHT = 120;
-	const SIZE = '680x120';
+	const WIDTH = 300;
+	const HEIGHT = 400;
+	const SIZE = '300x400';
 	public $maxImageFileSize = 5242880; //3MB
 
 	public $allowImageType = 'jpg,gif,png';
 	public $uploadImageFolder = 'upload/topbannerleft'; //remember remove ending slash
 	public $defineImageSize = array(
 			'image' => array(
-							array('alias' => '980x120', 'size' => '980x120'),
-							array('alias' => '680x120', 'size' => '680x120'),
+							array('alias' => '300x400', 'size' => '300x400'),
 						), 
 				);	
 	public function tableName()
@@ -26,7 +25,7 @@ class TopBannerLeft extends _BaseModel {
 			// array('image,status', 'required'),
 			array('status, order_display', 'numerical', 'integerOnly'=>true),
 			array('image, title, name_banner', 'length', 'max'=>255),
-		 	array('image,status', 'required', 'on' => 'create, update'), 
+		 	array('image,link', 'required', 'on' => 'create, update'), 
 		 
 			array('image', 'file', 'on' => 'create,update',
 				'allowEmpty' => true,
@@ -35,7 +34,7 @@ class TopBannerLeft extends _BaseModel {
 				'maxSize' => $this->maxImageFileSize, // 3MB
 				'tooLarge' => 'The file was larger than' . ($this->maxImageFileSize/1024)/1024 . 'MB. Please upload a smaller file.',
 			), 
-			array('name_banner,link, id, image, title, status, content, created_date, order_display', 'safe', 'on'=>'search'),
+			array('type,name_banner,link, id, image, title, status, content, created_date, order_display', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,6 +57,7 @@ class TopBannerLeft extends _BaseModel {
 			'order_display' => Yii::t('translation','Order Display'),
 			'name_banner'=>Yii::t('translation','Name Banner'),
 			'link'=>Yii::t('translation','Link'),
+			'type'=>Yii::t('translation','type'),
 		);
 	}
 
@@ -73,6 +73,9 @@ class TopBannerLeft extends _BaseModel {
 		$criteria->compare('content',$this->content,true);
 		$criteria->compare('created_date',$this->created_date,true);
 		$criteria->compare('order_display',$this->order_display);
+		// $criteria->compare('type',$this->type);
+		$criteria->addCondition('type="khungbanner1"');
+
 					
 		 
 		return new CActiveDataProvider($this, array(
