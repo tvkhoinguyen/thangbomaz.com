@@ -76,6 +76,15 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-sm-4">
+				<div class="form-group form-group-sm">
+					<?php echo $form->labelEx($model,'is_bai_hot', array('class' => 'col-sm-1 control-label')); ?>
+					<div class="col-sm-3">
+						<?php echo $form->dropDownList($model,'is_bai_hot', $model->optionYesNo, array('class' => 'form-control')); ?>
+						<?php echo $form->error($model,'is_bai_hot'); ?>
+					</div>
+				</div>
+			</div>
 
 			<div class="col-sm-4">
 				<div class="form-group form-group-sm">

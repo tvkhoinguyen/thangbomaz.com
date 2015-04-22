@@ -30,9 +30,9 @@ class ThoiSu extends _BaseModel
 			array('title, image, slug', 'length', 'max'=>200),
 			array('get_from', 'length', 'max'=>100),
 			array('short_content', 'length', 'max'=>160),
-			array('created_date', 'safe'),
+			array('created_date, is_bai_hot', 'safe'),
 			array('id, title, short_content, content, image, get_from, category_parent_id, category_sub_id, user_id, order_display, status, view, slug, is_home, is_default, created_date, updated_date', 'safe', 'on'=>'search'),
-			array('tmp_sub_category,tmp_category,id, title, short_content, content, image, get_from, category_parent_id, category_sub_id, user_id, order_display, status, view, slug, is_home, is_default, created_date, updated_date', 'safe'),
+			array('is_bai_hot,tmp_sub_category,tmp_category,id, title, short_content, content, image, get_from, category_parent_id, category_sub_id, user_id, order_display, status, view, slug, is_home, is_default, created_date, updated_date', 'safe'),
 
 			//
 			//
@@ -44,7 +44,7 @@ class ThoiSu extends _BaseModel
 				'tooLarge' => 'The file was larger than' . ($this->maxImageFileSize/1024)/1024 . 'MB. Please upload a smaller file.',
 			),
 			array('image, title, short_content, content, image, category_parent_id, order_display, status, created_date', 'required', 'on'=>'create'),
-			array('is_marquee, is_hot, is_default', 'safe'),
+			array('is_marquee, is_hot, is_default,is_bai_hot', 'safe'),
 		);
 	}
 	public function relations()
@@ -79,6 +79,7 @@ class ThoiSu extends _BaseModel
 			'is_hot'=>'Nổi Bật Mỗi Chuyên Mục',
 			'is_home' => Yii::t('translation','Nằm Home Mỗi Chuyên Mục'),
 			'is_default' => Yii::t('translation','Nằm Ở Trang Chủ'),
+			'is_bai_hot' => Yii::t('translation','Bài Hot Nằm Ở Trang Chủ'),
 		);
 	}
 
@@ -100,6 +101,7 @@ class ThoiSu extends _BaseModel
 		$criteria->compare('slug',$this->slug,true);
 		$criteria->compare('is_home',$this->is_home);
 		$criteria->compare('is_default',$this->is_default);
+		$criteria->compare('is_bai_hot',$this->is_bai_hot);
 		$criteria->compare('created_date',$this->created_date,true);
 		$criteria->compare('updated_date',$this->updated_date,true);
 		if(!isset($_GET['ajax']))
@@ -259,7 +261,7 @@ class ThoiSu extends _BaseModel
 		return ThoiSu::model()->findAll($criteria);
 	}
 
-	public static function getHomeMarqueeBox($id)
+	public static function getHomeMarqueeBox($id, $number=9)
 	{
 		$criteria = new CDbCriteria();
 		$criteria->compare('t.status',STATUS_ACTIVE);
@@ -269,7 +271,7 @@ class ThoiSu extends _BaseModel
 		// $criteria->compare('t.is_default', STATUS_ACTIVE);
 		$criteria->addCondition('t.is_hot=1 OR t.is_home=1');
 
-		$criteria->limit = 5;
+		$criteria->limit = $number;
 		$criteria->order ="order_display DESC, id DESC";
 		return ThoiSu::model()->findAll($criteria);
 	}
@@ -294,10 +296,10 @@ class ThoiSu extends _BaseModel
 		// $criteria->compare('t.category_parent_id', $id);
 		// $criteria->compare('t.is_marquee',STATUS_ACTIVE);
 		// $criteria->compare('t.is_home',STATUS_ACTIVE);
-		$criteria->compare('t.is_default',STATUS_ACTIVE);
-		// $criteria->compare('t.is_hot',STATUS_ACTIVE);
+		// $criteria->compare('t.is_default',STATUS_ACTIVE);
+		$criteria->compare('t.is_bai_hot',STATUS_ACTIVE);
 
-		$criteria->order ="order_display DESC, id DESC";
+		$criteria->order ="order_display DESC, created_date DESC, id DESC";
 		$models = ThoiSu::model()->findAll($criteria);
 		if(!empty($models) )
 		{
@@ -390,7 +392,7 @@ class ThoiSu extends _BaseModel
 		$criteria->compare('t.status',STATUS_ACTIVE);
 		// $criteria->compare('t.category_parent_id',$model->category_parent_id);
 		$criteria->limit = $limit;
-		$criteria->order ="view DESC, order_display DESC, created_date DESC";
+		$criteria->order ="order_display DESC, view DESC, created_date DESC";
 		return ThoiSu::model()->findAll($criteria);
 	}
 

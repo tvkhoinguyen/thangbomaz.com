@@ -65,6 +65,7 @@ class SettingForm extends CFormModel {
     public $f_phone;
 
     public $link_see_us_youtube;
+    public $pageSizeListTin;
 
     public static $smtpFields = array('host' => 'smtpHost', 'username' => 'smtpUsername', 'password' => 'smtpPassword',
         'port' => 'smtpPort', 'encryption' => 'encryption');
@@ -107,6 +108,7 @@ class SettingForm extends CFormModel {
             'label' => 'General',
             'htmlOptions' => array(),
             'items' => array(
+                array('name' => 'pageSizeListTin', 'controlTyle' => 'text', 'notes' => 'Số lượng tin hiển thị trong mỗi danh mục', 'unit' => '', 'htmlOptions' => array('size' => 80), 'rules' => ''),
                 array('name' => 'currencySign', 'controlTyle' => 'text', 'notes' => '', 'unit' => '', 'htmlOptions' => array('size' => 80), 'rules' => ''),
                 array('name' => 'dateFormat', 'controlTyle' => 'text', 'notes' => '', 'unit' => '', 'htmlOptions' => array('size' => 80), 'rules' => 'required'),
                 array('name' => 'timeFormat', 'controlTyle' => 'text', 'notes' => '', 'unit' => '', 'htmlOptions' => array('size' => 80), 'rules' => 'required'),

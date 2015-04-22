@@ -122,21 +122,4 @@
 
 <div id="rightcol" style="margin-top: 7px">
 	<?php $this->widget('AdsRightWidget'); ?>
-	<div class="rcol-box">
-	  <div class="rcol-title"><img class="rcol-icon" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/facebook.png" width="60px"/> <h3>Cảm nhận</h3></div>
-	  <div class="rcol-content">
-	  	<script type="text/javascript">
-	    (function(d, s, id) {
-	      var js, fjs = d.getElementsByTagName(s)[0];
-	      if (d.getElementById(id)) return;
-	      js = d.createElement(s); js.id = id;
-	      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1454443401486652&version=v2.0";
-	      fjs.parentNode.insertBefore(js, fjs);
-	    }(document, 'script', 'facebook-jssdk'));
-	    </script>
-	      <div class="fb-like-box" data-href="<?php echo Yii::app()->setting->getItem('facebook'); ?>" 
-	            data-width="280" data-height="300" data-show-faces="true" data-stream="false" data-header="false">
-	      </div>
-	  </div>
-	</div><!--end cam nhan-->
 </div>

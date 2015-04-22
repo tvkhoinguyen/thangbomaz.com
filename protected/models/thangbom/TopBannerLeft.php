@@ -2,9 +2,9 @@
 
 class TopBannerLeft extends _BaseModel {
 
-	const WIDTH = 980;
+	const WIDTH = 680;
 	const HEIGHT = 120;
-	const SIZE = '980x120';
+	const SIZE = '680x120';
 	public $maxImageFileSize = 5242880; //3MB
 
 	public $allowImageType = 'jpg,gif,png';
@@ -12,6 +12,7 @@ class TopBannerLeft extends _BaseModel {
 	public $defineImageSize = array(
 			'image' => array(
 							array('alias' => '980x120', 'size' => '980x120'),
+							array('alias' => '680x120', 'size' => '680x120'),
 						), 
 				);	
 	public function tableName()
