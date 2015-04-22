@@ -9,6 +9,18 @@ class TinTucThoiSuController extends AdminController
     {
         try {
             $model = new ThoiSu('create');
+            $model->status=1;
+            $model->is_marquee = 0;
+            $model->is_hot = 1;
+            $model->is_home = 1;
+            $model->is_default = 0;
+            $model->is_bai_hot = 0;
+            // 'is_marquee'=>'Slide Chạy Mỗi Chuyên Mục',
+            // 'is_hot'=>'Nổi Bật Mỗi Chuyên Mục',
+            // 'is_home' => Yii::t('translation','Nằm Home Mỗi Chuyên Mục'),
+            // 'is_default' => Yii::t('translation','Nằm Ở Trang Chủ'),
+            // 'is_bai_hot' => Yii::t('translation','Bài Hot Nằm Ở Trang Chủ'),
+            
             if (isset($_POST['ThoiSu'])) {
                 $model->attributes = $_POST['ThoiSu'];
                 $model->created_date = $model->updated_date = date('Y-m-d H:i:s');

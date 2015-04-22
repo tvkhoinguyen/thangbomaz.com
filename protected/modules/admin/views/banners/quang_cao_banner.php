@@ -35,10 +35,10 @@
 						$width = QuangCaoBanner::WIDTH1; $height=QuangCaoBanner::HEIGHT1;
 						break;
 					case '6':
-						$width = QuangCaoBanner::WIDTH2; $height=QuangCaoBanner::HEIGHT2;
+						$width = QuangCaoBanner::WIDTH1; $height=QuangCaoBanner::HEIGHT1;
 						break;
 					case '7':
-						$width = QuangCaoBanner::WIDTH2; $height=QuangCaoBanner::HEIGHT2;
+						$width = QuangCaoBanner::WIDTH1; $height=QuangCaoBanner::HEIGHT1;
 						break;
 					case '8':
 						$width = QuangCaoBanner::WIDTH3; $height=QuangCaoBanner::HEIGHT3;

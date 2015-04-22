@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+// error_reporting(0);
 // error_reporting(1);
 date_default_timezone_set('Asia/Singapore');
 // change the following paths if necessary
@@ -17,7 +17,7 @@ define('YII_UPLOAD_FOLDER', 'upload');
 // $yii=dirname(__FILE__).'../../../yii-framework-1.1.15/yii.php';
 
 //Localhost
-$yii=dirname(__FILE__).'/yii-framework-1.1.15/yii.php';
+$yii=dirname(__FILE__).'/../yii-framework-1.1.15/yii.php';
 
 // $yii='../yii-framework-1.1.15/yii.php';
 $config=dirname(__FILE__).'/protected/config/main.php';
