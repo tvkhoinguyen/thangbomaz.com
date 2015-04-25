@@ -559,3 +559,20 @@ body{background:url(images/bg.jpg) repeat-x top #fff; font:12px Arial, Helvetica
     border-radius: 0 0 3px 3px;
 
     }
+
+#tin_rao_vat{
+    padding: 5px 5px 5px 5px;
+    border:1px solid blue;
+}
+
+#tin_rao_vat a{
+    text-align: justify;
+    font:14px Arial, Helvetica, sans-serif;
+    color:#540604;
+    text-decoration: none;
+}
+
+#tin_rao_vat a:hover{
+    text-decoration: underline;
+    color: #00ff00;
+}

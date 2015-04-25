@@ -67,6 +67,30 @@
       <img src="images/slide6.jpg" width="300" height="400" /> -->
 </div>
 <!-- end slot 1 -->
+
+
+<!-- slot raovat -->
+<div class="rcol-box">
+  <div class="rcol-title">
+    <img class="rcol-icon" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/raovat.png" width="60px"/><br />
+    <a target="_blank" href="http://raobanusa.com">
+      <div style="margin-top: 10px;"><font size="+1" color="#fff">Tin rao vặt</font></div>
+    </a>
+  </div>
+  <div id="neoslideshow" class="neoslideshow" style="height: 700px;">
+    
+      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
+      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
+      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
+      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
+      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
+      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
+      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
+</div>
+</div>
+<!-- end slot raovat -->
+
+
 <!-- slot 2 -->
 <div class="rcol-box" style="margin: 0 0 0 0">
   <div class="rcol-title"><img class="rcol-icon" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/youtube.png" width="60px"/><br />
@@ -91,6 +115,9 @@
   ?>
 </div>
 <!-- end slot 2 -->
+
+
+
 <div style="height: 420px; width= 320px;">
 <script type="text/javascript">
     google_ad_client = "ca-pub-9511385175886331";
@@ -147,7 +174,7 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
          }(document, 'script', 'facebook-jssdk'));
          </script>
            <div class="fb-like-box" data-href="<?php echo Yii::app()->setting->getItem('facebook'); ?>" 
-                 data-width="280" data-height="300" data-show-faces="true" data-stream="false" data-header="false">
+                 data-width="280" data-height="320" data-show-faces="true" data-stream="false" data-header="false">
            </div>
        </div>
      </div><!--end cam nhan-->
