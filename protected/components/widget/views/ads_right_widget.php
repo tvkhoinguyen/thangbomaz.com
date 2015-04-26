@@ -34,7 +34,7 @@
 */?>
 
 <style type="text/css">
-  .neoslideshow {position:relative; width:500px; height:260px;}
+  .neoslideshow {position:relative; width:300px; height:260px;}
   .neoslideshow img {position:absolute;left:0; top:0;}
 
   .neoslideshow1 {position:relative; width:500px; height:260px;}
@@ -77,15 +77,73 @@
       <div style="margin-top: 10px;"><font size="+1" color="#fff">Tin rao vặt</font></div>
     </a>
   </div>
-  <div id="neoslideshow" class="neoslideshow" style="height: 700px;">
+  <div id="neoslideshow" class="neoslideshow" style="height: 700px;margin-top:15px">
     
-      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
-      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
-      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
-      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
-      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
-      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
-      <div class="tin_rao_vat"><a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a></div>
+      <div class="tin_rao_vat">
+      <font size="5px">
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        </font>
+      </div>
+      <div class="tin_rao_vat">
+      <font size="5px">
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        </font>
+      </div>
+      <div class="tin_rao_vat">
+      <font size="5px">
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        </font>
+      </div>
+      <div class="tin_rao_vat">
+      <font size="5px">
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
+        </font>
+      </div>
+
 </div>
 </div>
 <!-- end slot raovat -->
