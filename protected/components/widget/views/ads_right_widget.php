@@ -39,6 +39,35 @@
 
   .neoslideshow1 {position:relative; width:500px; height:260px;}
   .neoslideshow1 img {position:absolute;left:0; top:0;}
+  
+  /* General button style (reset) */
+      .btn {
+
+        background: #4d90fe;
+        text-decoration: none;
+
+        cursor: pointer;
+
+        padding: 10px 10px 10px 10px;
+        display: inline-block;
+        margin: 1px 5px 0px 5px;
+
+        outline: none;
+        position: relative;
+        border: 2px solid #fff;
+        float:left;
+      }
+
+      .btn > a{
+        font: 16px Arial, Helvetica, sans-serif;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+      .btn:hover {
+        text-decoration: underline;
+      }
 </style>
 <!-- slot 1 -->
 <div id="neoslideshow" class="neoslideshow" style="height: 420px;">
@@ -79,70 +108,22 @@
   </div>
   <div id="neoslideshow" class="neoslideshow" style="height: 700px;margin-top:15px">
     
-      <div class="tin_rao_vat">
-      <font size="5px">
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        </font>
-      </div>
-      <div class="tin_rao_vat">
-      <font size="5px">
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        </font>
-      </div>
-      <div class="tin_rao_vat">
-      <font size="5px">
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        </font>
-      </div>
-      <div class="tin_rao_vat">
-      <font size="5px">
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        <a href="">Cần tuyển thợ nail (CA->City) - (480) 001 111 1111</a><br />
-        </font>
-      </div>
+      <div>
+      
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+            <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      
+    </div>
+
 
 </div>
 </div>
