@@ -1,4 +1,4 @@
-<!-- <script type="text/javascript" src="plugins/jquery.js"></script> -->
+ <script type="text/javascript" src="plugins/jquery.js"></script> -->
 <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/cycle-plugin.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
@@ -135,10 +135,29 @@
       $result = curl_exec($ch);
       curl_close($ch);
       $result_arr = json_decode($result, true);
-      echo '<pre>';
-      print_r($result_arr);
-      echo '</pre>';
+      foreach ($result_arr as $one) 
+      {
+        // echo '<pre>';
+        // print_r($one->title);
+        // echo '</pre>';
+        // echo '<pre>';
+        // print_r($one['title']);
+        // echo '</pre>';
+
+        if( !empty($one) )
+        {
+          if(!empty($one['city']))
+            $address = $one['state']. ' -> '.$one['city'];
+          else
+            $address = $one['state'];
+          echo '<div class="btn"><a href="'.$one['link'].'">'.$one['title'].' ('.$address.') - '.$one['phone'].'</a></div>';
+        }
+      }
+      // echo '<pre>';
+      // print_r($result_arr);
+      // echo '</pre>';
       ?>
+      <!-- <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
@@ -148,8 +167,7 @@
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
-      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
-      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div> -->
       
     </div>
 
@@ -245,4 +263,4 @@ src="//pagead2.googlesyndication.com/pagead/show_ads.js">
                  data-width="280" data-height="320" data-show-faces="true" data-stream="false" data-header="false">
            </div>
        </div>
-     </div><!--end cam nhan-->
+     </div><!--end cam nhan
