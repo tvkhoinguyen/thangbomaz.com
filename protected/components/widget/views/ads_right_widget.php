@@ -109,7 +109,36 @@
   <div id="neoslideshow" class="neoslideshow" style="height: 700px;margin-top:15px">
     
       <div>
-      
+      <?php
+      // set HTTP header
+      $headers = array(
+          'Content-Type: application/json'
+      );
+      // set POST params
+      $fields = array(
+          // 'key' => '<your_api_key>',
+          'format' => 'json',
+          'ip' => $_SERVER['REMOTE_ADDR'],
+      );
+      $url = LINK_WEB_SERVICE;
+      // Open connection
+      $ch = curl_init();
+      // Set the url, number of POST vars, POST data
+      curl_setopt($ch, CURLOPT_URL, $url);
+      curl_setopt($ch, CURLOPT_POST, true);
+      curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true );
+
+      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+      // curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($fields));
+      // curl_setopt($ch, CURLOPT_POSTFIELDS, $fields );
+      $result = curl_exec($ch);
+      curl_close($ch);
+      $result_arr = json_decode($result, true);
+      echo '<pre>';
+      print_r($result_arr);
+      echo '</pre>';
+      ?>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
@@ -120,7 +149,7 @@
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
-            <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
+      <div class="btn"><a href="">Cần thợ nail gấp! (CA -> City) - (480) 142 2145</a></div>
       
     </div>
 

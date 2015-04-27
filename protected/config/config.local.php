@@ -7,7 +7,7 @@ include 'config_host/host.php';
 
 //All defined items in Yii-core
 //Please do not change if not require
-
+define('LINK_WEB_SERVICE', "http://raobanusa.com/site/serviceGetTin/token/thangbomaz.com");
 
 define('BE', 1);
 define('FE', 2);
