@@ -1,4 +1,4 @@
- <script type="text/javascript" src="plugins/jquery.js"></script> -->
+ <script type="text/javascript" src="plugins/jquery.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/cycle-plugin.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
