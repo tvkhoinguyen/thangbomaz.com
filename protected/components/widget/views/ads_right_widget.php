@@ -150,7 +150,7 @@
             $address = $one['state']. ' -> '.$one['city'];
           else
             $address = $one['state'];
-          echo '<div class="btn"><a href="'.$one['link'].'">'.$one['title'].' ('.$address.') - '.$one['phone'].'</a></div>';
+          echo '<div class="btn"><a target="_blank" href="'.$one['link'].'">'.$one['title'].' ('.$address.') - '.$one['phone'].'</a></div>';
         }
       }
       // echo '<pre>';
