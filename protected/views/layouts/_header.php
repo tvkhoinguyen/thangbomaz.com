@@ -29,7 +29,7 @@
     // $top_right = TopBannerRight::model()->findByPk(2);
     // $link_right = ImageHelper::getImageUrl($top_right, "image", TopBannerRight::SIZE);
     ?>
-    <a target="_blank" href="http://raobanusa.com"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/tb_raovat_logo.png" width="300px" height="120px"></a>
+    <a target="_blank" href="http://raobanusa.com/dang-tin"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/tb_raovat_logo.png" width="300px" height="120px"></a>
     <!-- <img src="<?php echo $link_right; ?>" height="120px" width="300px"/> -->
 </div>
 
